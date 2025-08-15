@@ -11,6 +11,18 @@ console.log("Cantidad de productos:", productos.length);
 console.log("Nombre del segundo elemento del array:", productos[1].nombre);
 console.log("Nombre del cuarto elemento del array:", productos[3].nombre);
 
+//3-2. Recorre el array productos utilizando el método forEach() e imprimir la misma información que en el
+//punto anterior, pero agregando una frase descriptiva (ej. "Producto: [nombre], Precio: [precio]").
+productos.forEach(function(producto){
+    console.log(`El producto ${producto.nombre} tiene un costo de: ${producto.precio} `);
+});
+
+//4-1. Agregar dos elementos al final del array productos utilizando push().
+productos.push(
+    {id: 6, nombre: "Tacos", precio: 8500, stock: 20},
+    {id: 7, nombre: "Empanadas", precio: 11500, stock: 30}
+);
+console.log(productos);
 
 // 4-3. Agregar un nuevo elemento al inicio del array productos utilizando unshift().
 
