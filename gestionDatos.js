@@ -34,7 +34,7 @@ console.log(productos);
 //4-2 Eliminar el último elemento del array productos utilizando pop()
 const eliminado = productos.pop();
 console.log(`Producto eliminado: ${eliminado.nombre}`);
-console.log('Array actualizado:',productos)
+console.log('array actualizado:',productos)
 
 // 4-3. Agregar un nuevo elemento al inicio del array productos utilizando unshift().
 
