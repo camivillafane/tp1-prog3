@@ -47,6 +47,20 @@ productos.unshift({
 });
 console.log(productos);
 
+
+// 4-4. Eliminar el primer elemento del array productos utilizando shift()
+
+const eliminadoPrimero = productos.shift();
+console.log(`\nSe eliminó el Producto del inicio: `);
+console.log('\nProductos actualizados:', productos);
+
+// 4-5. Crear un nuevo array con productos que tienen stock mayor a 0
+
+let productosConStock = productos.filter(producto => producto.stock > 0);
+console.log('\nProductos con stock disponible:', productosConStock);
+
+
+
 // 4-6. Crear un nuevo array llamado nombresProductos que contenga solo los nombres de todos los
 // productos en el inventario utilizando map().
 
