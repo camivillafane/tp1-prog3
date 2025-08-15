@@ -11,6 +11,13 @@ console.log("Cantidad de productos:", productos.length);
 console.log("Nombre del segundo elemento del array:", productos[1].nombre);
 console.log("Nombre del cuarto elemento del array:", productos[3].nombre);
 
+//3-1 Recorrer el array productos utilizando un bucle for...of e imprimir el nombre y el precio de cada
+//elemento.
+
+for (let producto of productos) {
+    console.log(`${producto.nombre}, ${producto.precio}`);
+}
+
 //3-2. Recorre el array productos utilizando el método forEach() e imprimir la misma información que en el
 //punto anterior, pero agregando una frase descriptiva (ej. "Producto: [nombre], Precio: [precio]").
 productos.forEach(function(producto){
@@ -23,6 +30,11 @@ productos.push(
     {id: 7, nombre: "Empanadas", precio: 11500, stock: 30}
 );
 console.log(productos);
+
+//4-2 Eliminar el último elemento del array productos utilizando pop()
+const eliminado = productos.pop();
+console.log(`Producto eliminado: ${eliminado.nombre}`);
+console.log('Array actualizado:',productos)
 
 // 4-3. Agregar un nuevo elemento al inicio del array productos utilizando unshift().
 
